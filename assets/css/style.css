@@ -1,0 +1,304 @@
+@font-face {
+  font-family: Alegeya_sc;
+  src: url(../fonts/Alegreya_SC/AlegreyaSC-Medium.ttf);
+}
+
+@font-face {
+  font-family: Nixie one;
+  src: url(../fonts/Nixie_One/NixieOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: Alegreya_sans;
+  src: url(../fonts/Alegreya_Sans/AlegreyaSans-Light.ttf);
+}
+
+:root {
+  --trans: all .5s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  height: 100vh;
+}
+
+h1 {
+  font-family: Nixie one;
+  font-size: 4.0625rem;
+  color: white;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: Alegeya_sc;
+  font-size: 2.25rem;
+  font-weight: 500;
+  color: white;
+}
+
+h4 {
+  font-family: Alegeya_sc;
+  font-size: 1.375rem;
+  font-weight: 400;
+  color: white;
+}
+
+p {
+  font-size: 0.875rem;
+  font-family: Helvetica, sans-serif;
+  color: hsla(0, 0%, 42%, 1);
+}
+
+
+/* ===========  HEDEAR        =========== */
+
+header {
+  height: 51.25rem;
+  background-image: url(../images/hero.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+nav {
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+nav > h2 {
+  cursor: pointer;
+}
+
+nav h2:hover {
+  transition: 1s ease-in-out;
+  text-decoration: underline;
+}
+
+.hero_text {
+  width: 550px;
+  margin: 15% auto;
+  text-align: center;
+}
+
+.hero_text .sub_title {
+  margin-top: 14px;
+  color: hsla(0, 0%, 100%, 0.5);
+}
+
+/* ===========  SECTION WORK     =========== */
+.works {
+  display: grid;
+  justify-content: center;
+  background-color: #FFFFFF;
+  padding: 60px 150px 90px 150px;
+}
+
+.title_works {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title_works_text {
+  font-family: Alegreya_sans;
+  font-size: 36px;
+  line-height: 39px;
+  color: #3A4F52;
+  margin-bottom: 16px;
+}
+
+button {
+  width: 120px;
+  background: none;
+  border: 2px solid hsla(187, 17%, 27%, 1);
+  font-size: 18px;
+  color: hsla(187, 17%, 27%, 1);
+  cursor: pointer;
+  transition: var(--trans);
+}
+
+button:hover {
+  background-color: hsla(187, 17%, 27%, 1);
+  color: white;
+}
+
+.container-overlay img {
+  width: 100%;
+  height: 214px; 
+  display: block;
+  object-fit: cover; 
+  transform: scale(1.1);
+  transition: var(--trans);
+}
+.gallery_work_grid {
+  margin-top: 60px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.work_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+} 
+.container-overlay {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(57, 78, 81, 0.43);
+  opacity: 0;
+  width: 100%;
+  transition: var(--trans);
+}
+.overlay button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  border: 2px solid white;
+}
+.overlay button:hover{
+   background: white;
+   color: hsla(187, 17%, 27%, 1);
+}
+
+.container-overlay:hover .overlay{
+opacity: 2;
+transition: var(--trans);
+}
+.container-overlay:hover img {
+  transform: scale(1.7);
+}
+
+/* ===========  SECTION Services     =========== */
+
+.services {
+  background-image: url(../images/gelb.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 85px 135px;
+}
+.service_content {
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.429);
+}
+.service_text {
+  text-align: center;
+}
+.service_title{
+  font-family: Alegreya_sans; 
+  font-size: 36px;
+  font-weight: 500;
+  padding-top: 15px;
+}
+.service_paragraph {
+  color:white;
+  margin-top: 15px;
+}
+.service_box {
+  margin-top: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.concept, .colors , .illustration {
+  width: 25%;
+  text-align: center;
+  color: white;
+  padding: 0 27px 41px 27px;
+  overflow: hidden;
+}
+.service_box  h3 {
+font-size: 30px;
+font-family: Alegreya_sans; 
+margin-bottom: 15px;
+}
+.service_box p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* ===========  SECTION BLOG    =========== */
+
+.blog {
+  background-color: #FFFFFF;
+  padding: 60px 150px 90px 150px;
+}
+.cards img {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+}
+.cards {
+  margin-top: 60px;
+  display: flex;
+gap: 15px;
+}
+.card_title{
+  font-size: 30px;
+  font-family: Alegreya_sans;
+margin-top: 18px;
+margin-bottom: 16px;
+}
+.date {
+  color: hsla(0, 0%, 42%, 1);
+  font-style: italic;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 17px;
+}
+.card_text {
+  color: hsla(0, 0%, 42%, 1);
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 17px;
+}
+.read_more {
+  text-decoration: none;
+  color: hsla(197, 54%, 55%, 1);
+}
+
+/* ===========  SECTION PARALAX TESTIMONIALS    =========== */
+
+.text_paralax {
+  height: 40vh;
+background-image: url(../images/para.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+padding: 80px 135px;
+}
+.box_paralax{
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.429);
+
+}
+.paralax_content {
+  color: white;
+  font-size: 36px;
+  font-family: Alegreya_sans;
+  padding: 20px 15px 60px 15px;
+}
