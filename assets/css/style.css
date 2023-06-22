@@ -71,7 +71,8 @@ nav {
   display: flex;
   justify-content: space-between;
 }
-nav > h2 {
+
+nav>h2 {
   cursor: pointer;
 }
 
@@ -129,12 +130,13 @@ button:hover {
 
 .container-overlay img {
   width: 100%;
-  height: 214px; 
+  height: 214px;
   display: block;
-  object-fit: cover; 
+  object-fit: cover;
   transform: scale(1.1);
   transition: var(--trans);
 }
+
 .gallery_work_grid {
   margin-top: 60px;
   display: grid;
@@ -142,28 +144,32 @@ button:hover {
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
+
 .work_box {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: auto;
-} 
+}
+
 .container-overlay {
   position: relative;
   overflow: hidden;
   width: 100%;
   height: auto;
 }
+
 .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
-  background-color: rgba(57, 78, 81, 0.43);
+  background-color: rgba(55, 97, 102, 0.43);
   opacity: 0;
   width: 100%;
   transition: var(--trans);
 }
+
 .overlay button {
   position: absolute;
   top: 50%;
@@ -172,15 +178,17 @@ button:hover {
   color: white;
   border: 2px solid white;
 }
-.overlay button:hover{
-   background: white;
-   color: hsla(187, 17%, 27%, 1);
+
+.overlay button:hover {
+  background: white;
+  color: hsla(187, 17%, 27%, 1);
 }
 
-.container-overlay:hover .overlay{
-opacity: 2;
-transition: var(--trans);
+.container-overlay:hover .overlay {
+  opacity: 2;
+  transition: var(--trans);
 }
+
 .container-overlay:hover img {
   transform: scale(1.7);
 }
@@ -189,48 +197,59 @@ transition: var(--trans);
 
 .services {
   background-image: url(../images/gelb.png);
+  filter: grayscale(50%);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding: 85px 135px;
 }
+
 .service_content {
   width: 100%;
   height: auto;
   background-color: rgba(0, 0, 0, 0.429);
 }
+
 .service_text {
   text-align: center;
 }
-.service_title{
-  font-family: Alegreya_sans; 
+
+.service_title {
+  font-family: Alegreya_sans;
   font-size: 36px;
   font-weight: 500;
   padding-top: 15px;
 }
+
 .service_paragraph {
-  color:white;
+  color: white;
   margin-top: 15px;
 }
+
 .service_box {
   margin-top: 65px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.concept, .colors , .illustration {
+
+.concept,
+.colors,
+.illustration {
   width: 25%;
   text-align: center;
   color: white;
   padding: 0 27px 41px 27px;
   overflow: hidden;
 }
-.service_box  h3 {
-font-size: 30px;
-font-family: Alegreya_sans; 
-margin-bottom: 15px;
+
+.service_box h3 {
+  font-size: 30px;
+  font-family: Alegreya_sans;
+  margin-bottom: 15px;
 }
+
 .service_box p {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -244,22 +263,26 @@ margin-bottom: 15px;
   background-color: #FFFFFF;
   padding: 60px 150px 90px 150px;
 }
+
 .cards img {
   width: 100%;
   height: auto;
   object-fit: fill;
 }
+
 .cards {
   margin-top: 60px;
   display: flex;
-gap: 15px;
+  gap: 15px;
 }
-.card_title{
+
+.card_title {
   font-size: 30px;
   font-family: Alegreya_sans;
-margin-top: 18px;
-margin-bottom: 16px;
+  margin-top: 18px;
+  margin-bottom: 16px;
 }
+
 .date {
   color: hsla(0, 0%, 42%, 1);
   font-style: italic;
@@ -267,12 +290,14 @@ margin-bottom: 16px;
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 17px;
 }
+
 .card_text {
   color: hsla(0, 0%, 42%, 1);
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 17px;
 }
+
 .read_more {
   text-decoration: none;
   color: hsla(197, 54%, 55%, 1);
@@ -281,24 +306,295 @@ margin-bottom: 16px;
 /* ===========  SECTION PARALAX TESTIMONIALS    =========== */
 
 .text_paralax {
-  height: 40vh;
-background-image: url(../images/para.png);
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-background-attachment: fixed;
-padding: 80px 135px;
+  /* height: 40vh; */
+  background-image: url(../images/para.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 80px 135px;
 }
-.box_paralax{
-  margin: 0 auto;
-  width: 90%;
-  height: auto;
-  background-color: rgba(0, 0, 0, 0.429);
 
+.box_paralax {
+  margin: 0 auto;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.429);
+  padding: 30px 15px 20px 15px;
 }
+
 .paralax_content {
   color: white;
   font-size: 36px;
   font-family: Alegreya_sans;
-  padding: 20px 15px 60px 15px;
+}
+
+.quote_link {
+  border: 1px solid white;
+  padding: 9px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  margin: 2rem auto;
+  width: 170px;
+  text-align: center;
+  transition: var(--trans);
+}
+
+.quote_link:hover {
+  background-color: white;
+  color: gray;
+}
+
+/* ===========  SECTION  TESTIMONIALS    =========== */
+.people article img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.testimonials {
+  padding: 60px 150px 90px 150px;
+}
+
+.testimon_title {
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.title_test {
+  font-family: Alegreya_sans;
+  font-size: 36px;
+  line-height: 39px;
+  color: #3A4F52;
+  margin-bottom: 16px;
+}
+
+.people {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.people article {
+  text-align: center;
+  padding: 25px;
+}
+
+article>p {
+  margin-bottom: 21px;
+  line-height: 20px;
+}
+
+.name_ {
+  font-weight: bold;
+}
+
+/* ===========  SECTION  CONTACT    =========== */
+
+
+.contact_ {
+  background-image: url(../images/pat.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 85px 135px;
+}
+
+.contact_content {
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.429);
+  text-align: center;
+}
+
+.contact_title h2 {
+  font-family: Alegreya_sans;
+  font-size: 36px;
+  font-weight: 500;
+  padding-top: 15px;
+}
+
+.contact_title p {
+  color: white;
+  margin-top: 15px;
+}
+
+form {
+  margin-top: 60px;
+}
+
+input {
+  height: 35px;
+  min-width: 40%;
+  background: none;
+  border: 1.5px solid #FFFFFF;
+  border-radius: 5px;
+  padding: 5px;
+}
+input::placeholder {
+  color: rgba(255, 255, 255, 0.539);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+textarea::placeholder{
+  color: rgba(255, 255, 255, 0.539);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+textarea {
+  min-width: 40%;
+  background: none;
+  border: 1.5px solid #FFFFFF;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.submit {
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  padding: 7px 12px;
+  margin: 15px 0 20px 0;
+}
+
+.submit:hover {
+  background-color: white;
+  color: #2B3E51;
+}
+
+footer {
+  height: 140px;
+  background-color: #2B3E51;
+  display: flex;
+  align-items: center;
+}
+
+.footer_text {
+  color: white;
+  font-family: Helvetica;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 9rem;
+}
+
+/* ============Media queries Tablet ============== */
+
+@media only screen and (max-width: 900px) {
+
+  header {
+    height: 500px;
+  }
+
+  .works {
+    padding: 22px 24px 126px 24px;
+  }
+
+  .container-overlay img {
+    height: 115px;
+  }
+
+  .services {
+    padding: 75px 10px;
+  }
+
+  .service_box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex_box div {
+    width: 100%;
+  }
+
+  .blog {
+    padding: 22px 24px;
+  }
+
+  .text_paralax {
+    padding: 80px 10px;
+  }
+
+  .box_paralax {
+    padding: 30px 15px 5px 15px;
+  }
+
+  .testimonials {
+    padding: 25px 50px 60px 50px;
+  }
+
+  .people {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .people article {
+    padding: 10px;
+  }
+
+  .contact_ {
+    padding: 55px 10px;
+  }
+
+  form {
+    margin-top: 50px;
+  }
+
+  input {
+    width: 90%;
+  }
+
+  textarea {
+    width: 90%;
+  }
+
+  .footer_text {
+    margin-left: 4rem;
+  }
+}
+
+/* ============Media queries Tablet ============== */
+
+@media only screen and (max-width: 600px) {
+
+  .hero_text{
+    width: 100%;
+    margin: 7rem auto;
+  }
+  .hero_text .title{
+   font-size: 39px;
+  }
+  .sub_title {
+    font-size: 16px;
+  }
+
+  button {
+    width: 90px;
+    height: 45px;
+  }
+  .works {
+    padding: 22px 14px 126px 14px;
+  }
+  .gallery_work_grid {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .container-overlay img{
+    height: 200px;
+  }
+  .overlay button {
+    width: 50%;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  button {
+    width: 150px;
+  }
 }
